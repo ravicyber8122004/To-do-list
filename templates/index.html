@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Futuristic To-Do</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h1>🚀 Sci-Fi Task Manager</h1>
+    <div class="input-group">
+      <input type="text" id="title" placeholder="Task Title">
+      <select id="category">
+        <option>Work</option>
+        <option>Personal</option>
+        <option>Mission</option>
+      </select>
+      <button onclick="addTask()">Add Task</button>
+    </div>
+    <ul id="taskList"></ul>
+  </div>
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
